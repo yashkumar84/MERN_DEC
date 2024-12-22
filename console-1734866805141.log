@@ -1,0 +1,146 @@
+a = 4;
+do {
+    a = prompt("Enter the Value");
+    console.log(a);
+}while(a !=4 );
+VM21:4 5
+VM21:4 6
+VM21:4 4
+undefined
+a = 4;
+do {
+    
+    console.log(a);
+}while(a !=4 );
+VM24:4 4
+undefined
+while(a != 4){
+    console.log(a);
+}
+undefined
+//Non - Primitive 
+undefined
+// Arrays
+undefined
+var arr = [10,20,30,40,50];
+undefined
+arr[3];
+40
+arr[3]  = 90;
+90
+arr;
+(5) [10, 20, 30, 90, 50]0: 101: 202: 303: 904: 50length: 5[[Prototype]]: Array(0)
+arr3,4[]
+VM246:1 Uncaught SyntaxError: Unexpected token ']'
+arr[3,4]
+50
+arr[0];\
+VM292:1 Uncaught SyntaxError: Invalid or unexpected token
+arr[0];
+10
+arr[1];
+20
+arr[2];
+30
+for(var i = 0;i < arr.length;i++){
+    console.log(arr[i])
+}
+VM397:2 10
+VM397:2 20
+VM397:2 30
+VM397:2 90
+VM397:2 50
+undefined
+for(var ele of arr){
+    console.log(ele);
+}
+VM509:2 10
+VM509:2 20
+VM509:2 30
+VM509:2 90
+VM509:2 50
+undefined
+for(var ele in arr){
+    console.log(ele);
+}
+VM519:2 0
+VM519:2 1
+VM519:2 2
+VM519:2 3
+VM519:2 4
+undefined
+for(var ele in arr){
+    console.log(arr[ele]);
+}
+VM552:2 10
+VM552:2 20
+VM552:2 30
+VM552:2 90
+VM552:2 50
+undefined
+arr;
+(5) [10, 20, 30, 90, 50]
+arr.length;
+5
+arr.push(60);
+6
+arr;
+(6) [10, 20, 30, 90, 50, 60]
+arr.pop();
+60
+arr;
+(5) [10, 20, 30, 90, 50]
+arr.unshift(60);
+6
+arr;
+(6) [60, 10, 20, 30, 90, 50]
+arr.shift();
+60
+arr;
+(5) [10, 20, 30, 90, 50]0: 101: 202: 903: 50length: 4[[Prototype]]: Array(0)
+arr.splice(2,1);
+[30]0: 30length: 1[[Prototype]]: Array(0)at: ƒ at()concat: ƒ concat()constructor: ƒ Array()copyWithin: ƒ copyWithin()entries: ƒ entries()every: ƒ every()fill: ƒ fill()filter: ƒ filter()find: ƒ find()findIndex: ƒ findIndex()findLast: ƒ findLast()findLastIndex: ƒ findLastIndex()flat: ƒ flat()flatMap: ƒ flatMap()forEach: ƒ forEach()includes: ƒ includes()indexOf: ƒ indexOf()join: ƒ join()keys: ƒ keys()lastIndexOf: ƒ lastIndexOf()length: 0map: ƒ map()pop: ƒ pop()push: ƒ push()reduce: ƒ reduce()reduceRight: ƒ reduceRight()reverse: ƒ reverse()shift: ƒ shift()slice: ƒ slice()some: ƒ some()sort: ƒ sort()splice: ƒ splice()toLocaleString: ƒ toLocaleString()toReversed: ƒ toReversed()toSorted: ƒ toSorted()toSpliced: ƒ toSpliced()toString: ƒ toString()unshift: ƒ unshift()values: ƒ values()with: ƒ with()Symbol(Symbol.iterator): ƒ values()Symbol(Symbol.unscopables): {at: true, copyWithin: true, entries: true, fill: true, find: true, …}[[Prototype]]: Object
+arr;
+(4) [10, 20, 90, 50]
+arr.splice(2 , 0 , 30);
+[]
+arr;
+(5) [10, 20, 30, 90, 50]
+arr.splice(3 , 1 , 90);
+[90]0: 90length: 1[[Prototype]]: Array(0)
+arr.splice(3 , 1 , 40);
+[90]
+arr;
+(5) [10, 20, 30, 40, 50]
+arr.includes(40);
+true
+arr.includes(70);
+false
+arr.fill(-1);
+(5) [-1, -1, -1, -1, -1]
+arr;
+(5) [-1, -1, -1, -1, -1]
+arr.fill(-1 , 0 ,2);
+(5) [-1, -1, -1, -1, -1]
+arr;
+(5) [-1, -1, -1, -1, -1]
+arr.fill(2 , 0 ,2);
+(5) [2, 2, -1, -1, -1]
+arr.indexOf(2);
+0
+arr = [1,2,3,4,5];
+(5) [1, 2, 3, 4, 5]
+arr.lastIndexOf(20;)
+VM1456:1 Uncaught SyntaxError: missing ) after argument list
+arr.lastIndexOf(2);
+1
+arr.slice(2 , 4);
+(2) [3, 4]
+arr.with(3 , 10);
+(5) [1, 2, 3, 10, 5]
+arr;
+(5) [1, 2, 3, 4, 5]
+var copy = arr.with(3 , 10);
+undefined
+copy;
+(5) [1, 2, 3, 10, 5]

@@ -1,0 +1,36 @@
+var a = 2;
+while(a != 1){
+    a = prompt("Enter the Value");
+    console.log(a);
+}
+VM161:4 2
+VM161:4 2
+VM161:4 2
+VM161:4 4
+VM161:4 1
+undefined
+a = 2;
+for (;a != 1;){
+    a = prompt("Enter the Value");
+    console.log(a);
+}
+VM231:4 3
+VM231:4 4
+VM231:4 5
+VM231:4 6
+VM231:4 7
+VM231:4 8
+VM231:4 3
+VM231:4 2
+VM231:4 1
+undefined
+a = 4;
+do {
+    a = prompt("Enter the Value");
+    console.log(a);
+}while(a !=4 );
+a = 4;
+do {
+    a = prompt("Enter the Value");
+    console.log(a);
+}while(a !=4 );
