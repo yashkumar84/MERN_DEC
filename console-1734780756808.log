@@ -1,0 +1,25 @@
+var j = 0;
+undefined
+while(j < 10){
+ console.log("Yash" , j);
+    j = i + 1;
+}
+VM107:2 Yash 0
+VM107:3 Uncaught ReferenceError: i is not defined
+    at <anonymous>:3:5
+(anonymous) @ VM107:3
+while(j < 10){
+ console.log("Yash" , j);
+    j = j + 1;
+}
+VM113:2 Yash 0
+VM113:2 Yash 1
+VM113:2 Yash 2
+VM113:2 Yash 3
+VM113:2 Yash 4
+VM113:2 Yash 5
+VM113:2 Yash 6
+VM113:2 Yash 7
+VM113:2 Yash 8
+VM113:2 Yash 9
+10
