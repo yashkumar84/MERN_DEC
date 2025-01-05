@@ -1,0 +1,104 @@
+//Objects 
+undefined
+var result = {
+    name : "Yash",
+    age : 12,
+    physics : 56,
+    english : 38,
+};
+undefined
+var yash = {
+    name : "Yash",
+    age : 12,
+    physics : 56,
+    english : 38,
+};
+undefined
+Object;
+ƒ Object() { [native code] }
+yash instanceof Object;
+true
+yash.physics;
+56
+yash.sst = 90;
+90
+yash;
+{name: 'Yash', age: 12, physics: 56, english: 38, sst: 90}
+yash.sst;
+90
+var dhoni = {name : "MS Dhoni" , age : 44 , century : 70 ,  fifty : 78};
+undefined
+dhoni.four = 90;
+90
+dhoni;
+{name: 'MS Dhoni', age: 44, century: 70, fifty: 78, four: 90}age: 44century: 70fifty: 78four: 90name: "MS Dhoni"[[Prototype]]: Object
+dhoni.6 = 89;
+VM637:1 Uncaught SyntaxError: Unexpected number
+dhoni[6] = 99;
+99
+dhoni;
+{6: 99, name: 'MS Dhoni', age: 44, century: 70, fifty: 78, four: 90}6: 99age: 44century: 70fifty: 78four: 90name: "MS Dhoni"[[Prototype]]: Object
+dhoni[6];
+99
+dhoni.first name = "MS";
+VM792:1 Uncaught SyntaxError: Unexpected identifier 'name'
+dhoni."first name" = "MS";
+VM797:1 Uncaught SyntaxError: Unexpected string
+dhoni["first name"] = "MS";
+'MS'
+dhoni["first name"];;
+'MS'
+dhoni["age"];
+44
+delete dhoni[6];
+true
+dhoni;
+{name: 'MS Dhoni', age: 44, century: 70, fifty: 78, four: 90, …}
+var arr = [1,2,3,4,5];
+undefined
+var arr2 = arr;
+undefined
+arr2;
+(5) [1, 2, 3, 4, 5]
+arr2[3] = 90;
+90
+ar2;
+VM1119:1 Uncaught ReferenceError: ar2 is not defined
+    at <anonymous>:1:1
+(anonymous) @ VM1119:1
+arr2;
+(5) [1, 2, 3, 90, 5]
+arr;
+(5) [1, 2, 3, 90, 5]0: 11: 22: 33: 904: 5length: 5[[Prototype]]: Array(0)
+var arr2 = [...arr];
+undefined
+arr2;
+(5) [1, 2, 3, 90, 5]
+var dhoni = {name : "MS Dhoni" , age : 44 , century : 70 ,  fifty : 78};
+undefined
+var dhoni1 = {...dhoni , key : "Value"};
+undefined
+dhoni1;
+{name: 'MS Dhoni', age: 44, century: 70, fifty: 78, key: 'Value'}age: 44century: 70fifty: 78key: "Value"name: "MS Dhoni"[[Prototype]]: Object
+//Functions 
+undefined
+var a = 10;
+undefined
+var b = 20;
+undefined
+var c = a + b;
+undefined
+c;
+30
+function add(a,b){
+    return a + b;
+}
+undefined
+add(10,20);
+30
+add(90,10);
+100
+add("10",78);
+'1078'
+add(true,78);
+79
